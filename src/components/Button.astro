@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  link: string;
+  id: number;
+}
+
+const { id, title, link } = Astro.props;
+---
+
+<a
+  class="flex-row justify-center text-white cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100"
+  href={link}
+  id={`button-${id}`}
+  ><svg
+    class="icon icon-tabler icon-tabler-book"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+    <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+    <path d="M3 6l0 13"></path>
+    <path d="M12 6l0 13"></path>
+    <path d="M21 6l0 13"></path>
+  </svg>{title}
+</a>

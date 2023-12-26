@@ -1,0 +1,28 @@
+---
+import Button from "../components/Button.astro";
+import Layout from "../layouts/Layout.astro";
+
+const listModules = [
+  { id: 1, title: "NEW SOA", link: "/#" },
+  { id: 2, title: "Pago Proveedores", link: "/#" },
+  { id: 3, title: "Web Afiliados", link: "/#" },
+  { id: 4, title: "Transparencia", link: "/transparency" },
+  { id: 5, title: "App Afiliados", link: "/#" },
+  { id: 4, title: "App Proveedores", link: "/#" },
+];
+---
+
+<Layout title="Ikatech">
+  <div class="flex flex-col items-center justify-center h-full">
+    <h1 class="pb-6 text-white text-4xl">
+      Documentación de modulos de Ikatech
+    </h1>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        listModules.map((module) => (
+          <Button id={module.id} title={module.title} link={module.link} />
+        ))
+      }
+    </div>
+  </div>
+</Layout>

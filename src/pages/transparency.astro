@@ -5,51 +5,120 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Transparency Module">
   <section class="flex flex-col justify-center items-center">
     <h1 class="text-4xl font-bold text-white pb-4">
-      Transparency Module title
+      Transparencia - Características
     </h1>
-    <p class="text-xl text-white pb-4">
-      This is the transparency module description.
+    <p class="text-base text-white p-4">
+      Transparencia ofrece una solución completa para compañías de asistencias
+      telefónicas, permitiéndoles analizar datos críticos y tomar decisiones
+      fundamentadas. A continuación, presentamos una descripción actualizada de
+      los módulos principales de la aplicación.
     </p>
-    <div class="grid grid-cols-2 gap-4 w-full">
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Text module</h2>
-        <p class="text-xl">
-          This is the transparency module description section.
+    <div class="grid lg:grid-cols-2 gap-4 w-full">
+      <div class="p-4 text-white">
+        <h2 class="text-2xl font-bold">1. Resumen Operativo</h2>
+        <p class="text-base">
+          El módulo de Resumen Operativo proporciona una visión general en
+          tiempo real de las operaciones clave. Permite a los usuarios acceder
+          rápidamente a métricas esenciales y estadísticas operativas para
+          evaluar el rendimiento general.
         </p>
       </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Image module</h2>
-        <p class="text-xl">This is the image description with section</p>
-      </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Image module</h2>
-        <p class="text-xl">This is the image description with section</p>
-      </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Text module</h2>
-        <p class="text-xl">
-          This is the transparency module description section.
+      <div class="text-white p-4">
+        <h2 class="text-2xl font-bold">1.1 Servicios</h2>
+        <p class="text-base">
+          El submódulo "Servicios" se enfoca en la gestión de los servicios
+          ofrecidos por la compañía. Proporciona herramientas para supervisar,
+          evaluar y optimizar la ejecución de cada servicio.
         </p>
       </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Text module</h2>
-        <p class="text-xl">
-          This is the transparency module description section.
+      <div class="text-white p-4">
+        <h2 class="text-xl font-bold">1.1.1 Asistencias por familia</h2>
+        <p class="text-sm pb-4">
+          Asistencias totales con estado en proceso y concluidas, agrupadas por
+          familias.
+        </p>
+
+        <div
+          class="w-[600px] h-[300px] overflow-hidden flex justify-center items-center"
+        >
+          <img
+            class="h-full w-auto object-cover min-w-full object-center"
+            src="../../public/familia_grafica.jpeg"
+            alt="grafico familia"
+          />
+        </div>
+      </div>
+      <div class="text-white p-4">
+        <h2 class="text-xl font-bold">
+          1.1.2 Asistencias por tipo de servicio
+        </h2>
+        <p class="text-sm pb-4">
+          Asistencias totales con estado en proceso y concluidas, agrupadas por
+          tipo de servicio.
+        </p>
+        <div
+          class="w-[600px] h-[300px] overflow-hidden flex justify-center items-center"
+        >
+          <img
+            class="h-full w-auto object-cover min-w-full object-center"
+            src="../../public/servicio_grafica.jpeg"
+            alt="grafico familia"
+          />
+        </div>
+      </div>
+      <div class="text-white p-4">
+        <h2 class="text-xl font-bold">1.1.3 Asistencias por zona</h2>
+        <p class="text-sm pb-4">
+          Asistencias totales con estado en proceso y concluidas, agrupadas por
+          zona.
+        </p>
+        <div
+          class="w-[600px] h-[300px] overflow-hidden flex justify-center items-center"
+        >
+          <img
+            class="h-full w-auto object-cover min-w-full object-center"
+            src="../../public/zon_grafica.jpeg"
+            alt="grafico familia"
+          />
+        </div>
+      </div>
+      <div class="p-4 text-white">
+        <h2 class="text-2xl font-bold">1.2 Llamadas</h2>
+        <p class="text-base">
+          El submódulo "Llamadas" se centra en la gestión y análisis de las
+          interacciones telefónicas, siendo esencial para la calidad del
+          servicio y la satisfacción del cliente.
         </p>
       </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Image module</h2>
-        <p class="text-xl">This is the image description with section</p>
-      </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Image module</h2>
-        <p class="text-xl">This is the image description with section</p>
-      </div>
-      <div class="bg-gray-100 p-4">
-        <h2 class="text-2xl font-bold">Text module</h2>
-        <p class="text-xl">
-          This is the transparency module description section.
+      <div class="text-white p-4">
+        <h2 class="text-xl font-bold">1.2.1 Total llamadas</h2>
+        <p class="text-sm pb-4">
+          Porcentaje total de llamadas atendidas y abandonadas.
         </p>
+        <div
+          class="w-[600px] h-[300px] overflow-hidden flex justify-center items-center"
+        >
+          <img
+            class="h-full w-auto object-cover min-w-full object-center"
+            src="../../public/call1_grafica.jpeg"
+            alt="Grafica llamadas"
+          />
+        </div>
+      </div>
+      <div class="text-white p-4">
+        <h2 class="text-xl font-bold">1.2.2 Porcentaje de llamadas</h2>
+        <p class="text-sm pb-4">
+          Porcentaje de llamadas en tiempo determinado de atención.
+        </p>
+        <div
+          class="w-[600px] h-[300px] overflow-hidden flex justify-center items-center"
+        >
+          <img
+            class="h-full w-auto object-cover min-w-full object-center"
+            src="../../public/porcentaje_call_grafica.jpeg"
+            alt="Grafica llamadas"
+          />
+        </div>
       </div>
     </div>
   </section>
